@@ -1,4 +1,7 @@
-urls: []
-request_int: 1
-symbols_diff: 0
-str_to_find: ""
+url: https://timetable.spbu.ru/MCSC/StudentGroupEvents/Primary/331531/2022-08-29
+request_int: 720
+symbols_diff: 10
+---
+url: https://biblio.mccme.ru/node/155285
+request_int: 720
+str_to_find: "Есть в продаже"

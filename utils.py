@@ -1,6 +1,7 @@
 """
 File with utils of different kind.
 """
+from collections.abc import Callable
 import yaml
 
 from rich.table import Table
@@ -48,14 +49,5 @@ def get_stop_criteria(config):
 def get_table(result):
     table = Table()
 
-    table.add_column("ID")
-    table.add_column("Link")
-    table.add_column("Updated")
-
-    for idx, url in enumerate(result):
-        table.add_row(
-            f"{idx}", Markdown(f"[{url}]({url})"), "[green]:heavy_check_mark:" if result[url] else "[red]:cross_mark:",
-            end_section=True
-        )
 
     return table
